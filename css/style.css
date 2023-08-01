@@ -652,7 +652,7 @@ footer .wrapper:after {
         right: 1em;
     }
 
-    #sendjobs-inner h2. #sendjobs-inner p {
+    #sendjobs-inner h2, #sendjobs-inner p {
         text-shadow: 0.5px 0.5px #000;
     }
 
