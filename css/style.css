@@ -582,3 +582,97 @@ footer .wrapper:after {
     text-align: center;
 }
 
+/* responsivo */
+
+@media screen and (max-width: 1024px){
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #search-form{
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+
+    #search-form form {
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input, #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper {
+        max-width: 960px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .company-box {
+        width: 46%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em; 
+    }
+
+    .company-box .company-info p, .locality i, .locality p, .job-type span {
+        font-size: 0.8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+
+    #sendjobs-inner h2. #sendjobs-inner p {
+        text-shadow: 0.5px 0.5px #000;
+    }
+
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3) {
+        border-right: 1px solid #ddd;
+    }
+
+    .testmony-box {
+        width: 49.4%;
+    }
+
+    .article-box {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+}
