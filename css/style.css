@@ -711,6 +711,10 @@ footer .wrapper:after {
     display: block;
 }
 
+#footer-contact {
+    margin-top: 5%;
+}
+
 
 /* responsive */
 
