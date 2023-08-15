@@ -11,7 +11,7 @@
     <link rel="icon" href="./img/logo.png">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="findjobs">
         <header>
             <nav>
                 <div class="nav-container">
@@ -25,11 +25,12 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-            </nav>
-            <div id="main-banner">
+            </nav>            
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Busque a sua vaga</h1>
+            <div id="job-filter">
                 <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
                     <form>
                         <input type="text" name="job" placeholder="Digite o cargo">
                         <select name="region">
@@ -42,12 +43,25 @@
                     </form>
                 </div>
             </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Últimas vagas enviadas</h1>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Free Lancer</label>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
-                    <a href="#" class="clickarea">
+                    <a href="job.html" class="clickarea">
                         <div class="company-box">
                             <img src="./img/googlelogo.png" alt="Logo Google">
                             <div class="company-info">
@@ -138,89 +152,10 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
             </div>
         </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum risus sed arcu varius, a ullamcorper est consectetur. Maecenas molestie arcu sed rhoncus pulvinar. Sed condimentum sem est, vitae tincidunt metus volutpat ut.</p>
-                <a href="#" class="ligth-btn">Enviar vaga</a>
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatística do JobFinder</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum risus sed arcu varius, a ullamcorper est consectetur. Maecenas molestie arcu sed rhoncus pulvinar. Sed condimentum sem est, vitae tincidunt metus volutpat ut.</p>
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">150</span>
-                    <p class="status-text">Vagas abertas</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">250</span>
-                    <p class="status-text">Candidatos contratados</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">50</span>
-                    <p class="status-text">Empresas participantes</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">550</span>
-                    <p class="status-text">Candidatos</p>
-                </div>
-            </div>
-        </section>
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2>Veja o que os candidatos dizem</h2>
-                <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam recusandae suscipit adipisci molestiae eaque nisi modi reprehenderit similique minus voluptatum iusto odit velit in laborum alias, fuga facilis repellat.</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia eum voluptatibus, deleniti nesciunt cupiditate harum a accusamus quas nemo in.</p>
-                    <img src="./img/avatar1.png" alt="Avatar">
-                    <p class="testmony-name">João</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia eum voluptatibus, deleniti nesciunt cupiditate harum a accusamus quas nemo in.</p>
-                    <img src="./img/avatar2.png" alt="Avatar">
-                    <p class="testmony-name">Maria</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia eum voluptatibus, deleniti nesciunt cupiditate harum a accusamus quas nemo in.</p>
-                    <img src="./img/avatar3.png" alt="Avatar">
-                    <p class="testmony-name">Pedro</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia eum voluptatibus, deleniti nesciunt cupiditate harum a accusamus quas nemo in.</p>
-                    <img src="./img/avatar4.png" alt="Avatar">
-                    <p class="testmony-name">Alexia</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus quaerat earum eveniet esse dolorum iusto? Veniam ducimus et, tenetur, pariatur cumque nesciunt voluptatibus, itaque perferendis laborum necessitatibus sint veritatis.</p>
-            <div class="article-box">
-                <img src="./img/blog1.jpg" alt="Imagem blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">31 de Julho de 2023 | 10 comentários</p>
-                <p class="article-resume">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam aliquam beatae. Delectus amet maxime id ipsa ipsum maiores eum dolores.</p>
-                <a href="#" class="article-btn ligth-btn">Ler Post</a>
-            </div>
-            <div class="article-box">
-                <img src="./img/blog2.jpg" alt="Imagem blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">31 de Julho de 2023 | 12 comentários</p>
-                <p class="article-resume">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam aliquam beatae. Delectus amet maxime id ipsa ipsum maiores eum dolores.</p>
-                <a href="#" class="article-btn ligth-btn">Ler Post</a>
-            </div>
-            <div class="article-box">
-                <img src="./img/blog3.jpg" alt="Imagem blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">31 de Julho de 2023 | 14 comentários</p>
-                <p class="article-resume">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam aliquam beatae. Delectus amet maxime id ipsa ipsum maiores eum dolores.</p>
-                <a href="#" class="article-btn ligth-btn">Ler Post</a>
-            </div>
-        </section>
+       
         <footer>
             <div class="wrapper">
                 <div class="footer-box">
